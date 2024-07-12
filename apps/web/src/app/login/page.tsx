@@ -23,7 +23,7 @@ const loginSchema = Yup.object({
   username: Yup.string().required('Username is required'),
   password: Yup.string()
     .required('Password is required')
-    .min(5, 'Password must be at least 6 characters'),
+    .min(5, 'Password must be at least 5 characters'),
 });
 
 const initialValues: ILogin = {
