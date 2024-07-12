@@ -28,7 +28,7 @@ const registrationSchema = Yup.object({
   accountType: Yup.string().required('Account type is required'),
   password: Yup.string()
     .required('Password is required')
-    .min(5, 'Password must be at least 6 characters'),
+    .min(5, 'Password must be at least 5 characters'),
   referral: Yup.string(),
 });
 
